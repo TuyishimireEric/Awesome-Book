@@ -1,3 +1,4 @@
+/* eslint-disable max-classes-per-file */
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -67,3 +68,4 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+/* eslint-enable max-classes-per-file */
