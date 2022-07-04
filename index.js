@@ -46,7 +46,14 @@ class Book {
       books.push(book);
       localStorage.setItem('books', JSON.stringify(books));
     }
-   
+    //this part
+    static removeBook(here) {
+        const books = Store.getBooks();
+        books.forEach((book, index) => {
+          if(book.title === b) {
+            books.splice(index, 1);
+        }
+    });
   }
   document.addEventListener('DOMContentLoaded', UI.displayBooks);
   document.querySelector('form').addEventListener('submit', (e) => {
