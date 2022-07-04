@@ -1,43 +1,34 @@
 
 
 # Portfolio-Site
--This is my capstone project at Microverse as a beginner software developer. It's a conference page to speak about Gender-Based-Violence and Sexual Abuse for better treatment of victims and reducing abuse cases. The project utilized a design by Cindy Shin.
+-This is an Awesome Booklist project that we did with my coding partner. The project allows the user to add or remove a book from the list.
 
 ## Built With
 
 - Major languages 
-  HTML | CSS | Javascript
+  HTML | Javascript
 - Frameworks
   None
-- Technologies used
-  Nodejs, jQuery
   
  ### Prerequisites
-HTML, CSS
+HTML
 
 ### Getting Started
 To get a local copy for practice or as a template, follow these simple steps.
 
-Access the live source on - https://github.com/sharon-odhiambo/Salama-Conference-Capstone-Project
+Access the live source on - https://github.com/TuyishimireEric/Awesome-Book
 Copy the **https** or **SSH** address on the code
-Clone the repository using your editor    **or**
+Clone the repository using your editor   
 
-### Clone this repository
-$ git@github.com:sharon-odhiambo/Salama-Conference-Capstone-Project.git
-$ cd My-Portfolio-Site
+## Author 1
 
-
-### Live Demo
-
-Live Version - https://sharon-odhiambo.github.io/
-
-## Author
-
+👤 **Eric Tuyishimire**
 👤 **Sharon Odhiambo**
 
+- GitHub: [@TuyishimireEric](https://github.com/TuyishimireEric)
 - GitHub: [@sharon-odhiambo](https://github.com/sharon-odhiambo)
-- Twitter: [@SharonVictor16](https://twitter.com/SharonVictor16)
-- LinkedIn: [Sharon Odhiambo](https://www.linkedin.com/in/sharon-odhiambo-4333a0163/)
+- Twitter: [@Tuyishimire Eric](https://twitter.com/TuyishimireEric)
+- Twitter: [@SharonVictor16](https://twitter.com/sharonvictor16)
 
 ## 🤝 Contributing
 
@@ -51,10 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Orginal design by [Cindy Shin in Benance](https://www.behance.net.adagio07)
 - Hat tip to anyone whose code was used
 - Big thanks to the microverse community with a special mention of my coding partners, morning session teams, standup teams and reviewers.
-- My family's support and assistance whenever was needed.
-
 ## 📝 License
 This project is [MIT](./LICENSE.txt) licensed.
