@@ -1,5 +1,11 @@
+// Store Book Details
+const bookDetail = [
+    { 
+        id: 1
+    }
+]
 // Book Class: Represents a Book
-class Book {
+class book {
     constructor(title, author) {
       this.title = title;
       this.author = author;
@@ -16,9 +22,9 @@ class Book {
       const list = document.querySelector('.book-list');
       const addedbook = document.createElement('div');
       addedbook.innerHTML = `
-        <p>${book.title}</p>
-        <p>${book.author}</p>
-        <a href="#" class="btn btn-danger btn-sm delete">X</a>
+        <p>${bookDetail.title}</p>
+        <p>${bookDetail.author}</p>
+        <a href="#" class="btn btn-danger btn-sm delete">Remove</a>
       `;
   
       list.appendChild(addedbook);
@@ -35,7 +41,7 @@ class Book {
       div.className = `alert alert-${className}`;
       div.appendChild(document.createTextNode(message));
       const container = document.querySelector('.container');
-      const form = document.querySelector('#book-form');
+      const form = document.querySelector('#form');
       container.insertBefore(div, form);
   
       // Vanish in 3 seconds
@@ -84,19 +90,13 @@ class Book {
   document.addEventListener('DOMContentLoaded', UI.displayBooks);
   
   // Event: Add a Book
-  document.querySelector('#book').addEventListener('submit', (e) => {
+  document.querySelector('form').addEventListener('submit', (e) => {
     // Prevent actual submit
     e.preventDefault();
   
     // Get form values
     const title = document.querySelector('#title').value;
     const author = document.querySelector('#author').value;
-    // Validate
-    if(title === '' || author === '' || isbn === '') {
-      UI.showAlert('Please fill in all fields', 'danger');
-    } else {
-      // Instatiate book
-      const book = new Book(title, author, isbn);
   
       // Add Book to UI
       UI.addBookToList(book);
@@ -109,11 +109,10 @@ class Book {
   
       // Clear fields
       UI.clearFields();
-    }
-  });
+    });
   
   // Event: Remove a Book
-  document.querySelector('#book-list').addEventListener('click', (e) => {
+  document.querySelector('.book-list').addEventListener('click', (e) => {
     // Remove book from UI
     UI.deleteBook(e.target);
   
