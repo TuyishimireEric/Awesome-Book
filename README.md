@@ -1,6 +1,6 @@
 
 
-# Portfolio-Site
+# Awesome Books
 -This is an Awesome Booklist project that we did with my coding partner. The project allows the user to add or remove a book from the list.
 
 ## Built With
