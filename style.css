@@ -1,0 +1,36 @@
+body {
+    padding: 30px 30%;
+}
+
+.book-list {
+    border: 2px solid black;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 12px;
+    height: 20px;
+    background-color: aqua;
+}
+
+p {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}

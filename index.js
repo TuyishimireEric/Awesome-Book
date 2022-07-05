@@ -33,10 +33,9 @@ class UI {
 
   static addBookToList(book) {
     const list = document.querySelector('.book-list');
-    const addedbook = document.createElement('div');
+    const addedbook = document.createElement('section');
     addedbook.innerHTML = `
-        <p>${book.title}</p>
-        <p>${book.author}</p>
+      <p>"${book.title}" by ${book.author}</p>
         <button type="submit" class="delete">Remove</button>
         <hr>
       `;
