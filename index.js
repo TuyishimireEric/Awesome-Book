@@ -33,17 +33,17 @@ class UI {
 
   static addBookToList(book) {
     const list = document.querySelector('.book-list');
-    const addedbook = document.createElement('section');
+    const addedbook = document.createElement('tr');
     addedbook.innerHTML = `
-      <p>"${book.title}" by ${book.author}</p>
-        <button type="submit" class="delete">Remove</button>
+      <td class="cols1">"${book.title}" by ${book.author}</td>
+      <td class="cols2"><button type="submit" class="delete">Remove</button></td>
       `;
     list.appendChild(addedbook);
   }
 
   static deleteBook(el) {
     if (el.classList.contains('delete')) {
-      el.parentElement.remove();
+      el.parentElement.parentElement.remove();
     }
   }
 
@@ -54,7 +54,8 @@ class UI {
 }
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
-document.querySelector('form').addEventListener('submit', () => {
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
   const book = new Book(title, author);

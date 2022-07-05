@@ -3,22 +3,41 @@ body {
 }
 
 .book-list {
-    border: 2px solid black;
-}
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 12px;
-    height: 20px;
-    background-color: aqua;
+    border: 3px solid black;
 }
 
-p {
-    width: 70%;
-    display: flex;
-    align-items: center;
+table {
+    width: 100%;
+
+}
+
+tr:nth-child(even) {
+    background: #FFF;
+}
+
+tr:nth-child(odd) {
+    background: #CCC;
+}
+
+.cols2 {
+    width: 80%;
+    padding: 3px 8px;
+    align-content: center;
+}
+
+.cols2 {
+    width: 15%;
+}
+
+input {
+    border: 3px solid black;
+    width: 100%;
+}
+
+.delete {
+    border: 2.5px solid black;
+    box-shadow: 2px 2px;
+    width: 100%;
 }
 
 h1 {
@@ -33,4 +52,10 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 12px;
+}
+
+.add {
+    border: 4px solid black;
+    box-shadow: 2px 2px;
+    margin-left: 25%;
 }
