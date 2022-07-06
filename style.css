@@ -1,11 +1,14 @@
 body {
-  padding: 4px 30%;
+  padding: 4px 10%;
+  min-height: 97vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 98%;
   height: 40px;
   padding: 1px 12px;
   align-items: center;
@@ -35,7 +38,7 @@ a:hover {
 }
 
 span {
-  margin-left: 29%;
+  margin-left: 52.1vw;
 }
 
 .addbook,
@@ -65,11 +68,6 @@ tr:nth-child(odd) {
   align-content: center;
 }
 
-input {
-  border: 3px solid black;
-  width: 100%;
-}
-
 .delete {
   border: 2.5px solid black;
   box-shadow: 2px 2px;
@@ -90,16 +88,26 @@ h1 {
   gap: 12px;
 }
 
+input {
+  border: 3px solid black;
+  width: 30vw;
+  height: 30px;
+  margin:2px 12px;
+  padding: 1px 4px;
+}
+
 .add {
   border: 4px solid black;
   box-shadow: 2px 2px;
-  margin-left: 25%;
+  margin-left: 26vw;
+  height: 30px;
+  width: 64px;
 }
 
 footer {
   display: flex;
-  width: 96%;
-  margin-top: 12px;
+  width: 98%;
+  margin-top: auto;
   height: 40px;
   padding: 1px 12px;
   align-items: center;
