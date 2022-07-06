@@ -91,5 +91,5 @@ contactLink.addEventListener('click', () => {
   contactSection.style.display = 'block';
 });
 
-document.getElementById('date-time').innerHTML=new Date();
+document.getElementById('date-time').innerHTML = new Date();
 /* eslint-enable max-classes-per-file */
