@@ -83,10 +83,13 @@ listLink.addEventListener('click', () => {
 addLink.addEventListener('click', () => {
   addSection.style.display = 'block';
   tableSection.style.display = 'none';
+  contactSection.style.display = 'none';
 });
 contactLink.addEventListener('click', () => {
   addSection.style.display = 'none';
   tableSection.style.display = 'none';
   contactSection.style.display = 'block';
 });
+
+document.getElementById('date-time').innerHTML=new Date();
 /* eslint-enable max-classes-per-file */
