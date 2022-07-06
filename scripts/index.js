@@ -67,4 +67,29 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+// Make website into a complete Single Page Application
+const tableSection = document.getElementById('table-section');
+const addSection = document.getElementById('addbook');
+const contactSection = document.getElementById('contact');
+const listLink = document.querySelector('.nav-item1');
+const addLink = document.querySelector('.nav-item2');
+const contactLink = document.querySelector('.nav-item3');
+
+listLink.addEventListener('click', () => {
+  addSection.style.display = 'none';
+  tableSection.style.display = 'block';
+  contactSection.style.display = 'none';
+});
+addLink.addEventListener('click', () => {
+  addSection.style.display = 'block';
+  tableSection.style.display = 'none';
+  contactSection.style.display = 'none';
+});
+contactLink.addEventListener('click', () => {
+  addSection.style.display = 'none';
+  tableSection.style.display = 'none';
+  contactSection.style.display = 'block';
+});
+
+document.getElementById('date-time').innerHTML = new Date();
 /* eslint-enable max-classes-per-file */
