@@ -1,6 +1,6 @@
 body {
-  padding: 0;
-  min-height: 100vh;
+  padding: 4px 10%;
+  min-height: 97vh;
   display: flex;
   flex-direction: column;
 }
@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  width: 98%;
   height: 40px;
   padding: 1px 12px;
   align-items: center;
@@ -40,6 +41,7 @@ a:hover {
 span {
   display: flex;
   justify-content: right;
+  margin-left: 52.1vw;
 }
 
 .addbook,
@@ -67,11 +69,6 @@ tr:nth-child(odd) {
   width: 15%;
   padding: 3px 8px;
   align-content: center;
-}
-
-input {
-  border: 3px solid black;
-  width: 100%;
 }
 
 .delete {
@@ -108,18 +105,30 @@ h1 {
   margin-left: 30%;
 }
 
+input {
+  border: 3px solid black;
+  width: 30vw;
+  height: 30px;
+  margin: 2px 12px;
+  padding: 1px 4px;
+}
+
 .add {
   border: 3px solid black;
   box-shadow: 2px 2px;
   margin: auto 0;
+  margin-left: 26vw;
+  height: 30px;
+  width: 64px;
 }
 
 footer {
   display: flex;
   width: 100%;
+  width: 98%;
+  margin-top: auto;
   height: 40px;
   padding: 3px 12px;
   align-items: center;
   border: 2px solid black;
-  margin-top: auto;
 }
